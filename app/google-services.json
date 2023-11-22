@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "96278560184",
+    "project_id": "prueba1nacionalacv",
+    "storage_bucket": "prueba1nacionalacv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96278560184:android:702cf2e395b104f50ee34d",
+        "android_client_info": {
+          "package_name": "com.example.prueba1_nacional_acv"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoHrqmL9MHqULk7SC-vEu_Qn_WEO3hyaw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
