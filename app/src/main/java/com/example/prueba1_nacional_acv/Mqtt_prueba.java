@@ -1,4 +1,5 @@
 package com.example.prueba1_nacional_acv;
+
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.eclipse.paho.client.mqttv3.MqttException;
@@ -11,17 +12,13 @@ public class Mqtt_prueba {
 
     public void connect(String brokerUrl, String clientId) {
         try {
-            // Set up the persistence layer
             MemoryPersistence persistence = new MemoryPersistence();
 
-            // Initialize the MQTT client
             client = new MqttClient(brokerUrl, clientId, persistence);
 
-            // Set up the connection options
             MqttConnectOptions connectOptions = new MqttConnectOptions();
             connectOptions.setCleanSession(true);
 
-            // Connect to the broker
             client.connect(connectOptions);
         } catch (MqttException e) {
             e.printStackTrace();
@@ -45,11 +42,12 @@ public class Mqtt_prueba {
         }
     }
 
+    /*
     public void subscribe(String topic) {
         try {
             client.subscribe(topic);
         } catch (MqttException e) {
             e.printStackTrace();
         }
-    }
+    }*/
 }
